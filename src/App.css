@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+/* Custom Palettes */
+.theme-ocean {
+  background-color: #042743 !important;
+  color: white !important;
+}
+
+.theme-forest {
+  background-color: #c7c7c7 !important;
+  color: white !important;
+}
+
+.theme-sunset {
+  background-color: #4d2b01 !important;
+  color: white !important;
+}
+
+.theme-ocean textarea, .theme-forest textarea, .theme-sunset textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
