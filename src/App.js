@@ -2,10 +2,11 @@
 import "./App.css";
 import React, { useState } from "react";
 import Navbar from "./Components/Navbar";
+import About from "./Components/About";
 
 import Form from "./Components/Form";
 import Alert from "./Components/Alert";
-// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
     const [theme, setTheme] = useState('ocean');
@@ -45,14 +46,14 @@ const togglesMode = (selectedTheme) => {
 
   return (
     <>
-    {/* <Router> */}
+    <Router>
       <Navbar title="Jerry" home="Home" mode={mode} toggleMode={toggleMode} togglesMode={togglesMode} />
       <Alert alert={alert} />
-      <div className="container">
-<Form heading="Enter the text to analyze below" mode={mode} theme={theme}/>
+      {/* <div className="container"> */}
+{/* <Form heading="Enter the text to analyze below" mode={mode} theme={theme}/> */}
  
 
- {/* <div className="container">
+ <div className="container">
         <Routes>
           <Route
             exact path="/form"
@@ -75,9 +76,9 @@ const togglesMode = (selectedTheme) => {
             }
           />
         </Routes>
-      </div> */}
       </div>
-      {/* </Router> */}
+      {/* </div> */}
+      </Router>
     </>
   );
 }

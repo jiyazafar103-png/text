@@ -66,7 +66,7 @@ export default function Form(props) {
               .trim()
               .split(" ")
               .filter(function (element) {
-                return element != "";
+                return element !== "";
               }).length
           }{" "}
           words and {text.length} characters{" "}
