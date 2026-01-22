@@ -39,7 +39,7 @@ const togglesMode = (selectedTheme) => {
       setMode("light");
       document.body.style.background = "white";
       showAlert("Light mode has been enabled", "success");
-      document.title='Textutils - Light mode'
+      document.title='Textutil - Light mode'
     }
   };
 
